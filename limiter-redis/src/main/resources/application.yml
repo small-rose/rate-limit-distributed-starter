@@ -1,0 +1,25 @@
+rateLimit:
+  repository:
+    redis:
+      cluster: false
+      sentinel: false
+      clusterUrl:
+      sentinelUrl:
+      masterName:
+      hostName:
+      port:
+      password: 12345345
+      maxTotal: 8
+      maxIdle: 8
+      minIdle: 2
+      maxWaitMillis: -1
+      minEvictableIdleTimeMillis: 1800000
+      softMinEvictableIdleTimeMillis: 1800000
+      numTestsPerEvictionRun: 3
+      testOnCreate: false
+      testOnBorrow: false
+      testOnReturn: false
+      testWhileIdle: false
+      timeBetweenEvictionRunsMillis: -1
+      blockWhenExhausted: true
+      timeOut: 1000
